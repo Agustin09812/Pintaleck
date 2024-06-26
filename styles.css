@@ -1,0 +1,226 @@
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body {
+    min-height: 100dvh;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/* ---------- WHATSAPP BUTTON ---------- */
+
+.wp-btn {
+    position: fixed;
+    background-color: #25d366;
+    width: 3.47rem;
+    height: 3.47rem;
+    right: 1.875rem;
+    bottom: 1.875rem;
+    z-index: 1;
+    transition: all 250ms ease;
+
+    &:hover {
+        background-color: #14639c;
+        transform: scale(1.2);
+    }
+}
+
+.wp-btn i {
+    color: #fff;
+    font-size: 2.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/* ------------------------------ */
+
+.tittle h5 {
+    font-weight: 300;
+}
+
+/* 
+---------- NAVBAR ---------- */
+
+.menu {
+    background-color: none;
+    transition: background-color 500ms ease;
+}
+
+.navbar-scrolled {
+    background-color: #323232;
+    transition: background-color 500ms ease;
+}
+
+/* -------------------------------------- */
+
+.carousel-caption {
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.carousel-caption h1 {
+    color: #fff;
+    font-weight: 800;
+}
+
+.carousel-caption h1,
+.carousel-caption h5 {
+    color: #fff;
+    text-shadow: 2px 2px 5px #00000030;
+}
+
+.carousel-btn {
+    margin-top: 1rem;
+    max-width: 100%;
+}
+
+.carousel-btn button {
+    width: 20rem;
+}
+
+/* ---------- SECTION GRID ---------- */
+
+.grid-item {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5%;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 500ms ease;
+}
+
+.grid-item:hover img {
+    transform: scale(1.5);
+}
+
+.grid-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.grid-item .overlay p {
+    font-style: italic;
+}
+
+/* -------------------------------------- */
+
+/* -------------------- MEDIA QUERIES -------------------- */
+
+@media (min-width: 992px) {
+
+    .nav-item {
+        position: relative;
+    }
+
+    .nav-item .nav-link {
+        position: relative;
+        text-decoration: none;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: #ffffff85;
+            transition: width 250ms ease, left 250ms ease, background-color 250ms ease;
+            transform-origin: bottom center;
+        }
+
+        &:hover::before {
+            width: 100%;
+            background-position: 100% 0;
+            left: 0;
+        }
+    }
+
+    .nav-item .nav-link.hovered::before {
+        background-color: #fff;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .menu {
+        background-color: #323232;
+    }
+
+    .navbar-scrolled {
+        background-color: #323232;
+    }
+
+    .carousel-item {
+        height: 80em;
+    }
+
+    .carousel-item img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 60em;
+    }
+
+    .carousel-item img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .carousel-item {
+        height: 40em;
+    }
+
+    .carousel-item img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+@media (max-width: 460px) {
+    .carousel-btn button {
+        width: 13.5rem;
+    }
+}

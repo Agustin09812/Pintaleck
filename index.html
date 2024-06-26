@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- ------------------ -->
+    <title>Pintaleck</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- ---------- NAVBAR ---------- -->
+        <nav class="navbar navbar-expand-lg navbar-dark menu fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href=""><strong>PINTALECK</strong>
+                    <!-- <img src="./assets/Logo-blanco.png" class="logo" alt="logo image" /> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav" id="navbarNavList">
+                        <div>
+                            <li class="nav-item">
+                                <a class="nav-link text-center fs-6" onclick="changeActive(this)" href="#">Inicio</a>
+                            </li>
+                        </div>
+                        <div>
+                            <li class="nav-item">
+                                <a class="nav-link text-center fs-6" onclick="changeActive(this)"
+                                    href="#company">Quienes
+                                    Somos</a>
+                            </li>
+                        </div>
+                        <div>
+                            <li class="nav-item">
+                                <a class="nav-link text-center fs-6" onclick="changeActive(this)"
+                                    href="#brands">Marcas</a>
+                            </li>
+                        </div>
+                        <div>
+                            <li class="nav-item">
+                                <a class="nav-link text-center fs-6" onclick="changeActive(this)"
+                                    href="#contact">Contacto</a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- -------------------------------------- -->
+    </header>
+
+    <main>
+        <!-- ---------- PORTADA CARRUSEL ---------- -->
+        <div class="position-relative pb-5">
+            <div class="carousel-caption position-absolute top-50 start-50 w-75 text-center">
+                <h1>LA MEJOR SOLUCIÓN</h1>
+                <h5>PARA REVESTIR TUS PAREDES</h5>
+                <div class="d-flex justify-content-center carousel-btn">
+                    <a href="https://api.whatsapp.com/send?phone=5493447552063&text=Hola,%20quiero%20solicitar%20un%20presupuesto%20para%20"
+                        target="_blank">
+                        <button type="button" class="btn btn-light">
+                            Contacto
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/fondo-1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/fondo-2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/fondo-3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/fondo-4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/fondo-5.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/fondo-6.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- -------------------------------------- -->
+
+        <!-- ---------- SECCIÓN: 1 ---------- -->
+        <div class="container">
+            <div class="text-center mb-5 tittle">
+                <h1>INDICE</h1>
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et accusamus ipsa delectus quos commodi
+                    aliquid fugit, tempora praesentium provident, amet dolor expedita explicabo omnis consequatur
+                    dolorem harum officia veritatis cumque.</h5>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-5 d-flex justify-content-center">
+                    <div class="grid-item shadow">
+                        <img src="./assets/img/img (2).jpg" class="img-fluid" alt="Imagen 2">
+                        <div class="overlay">
+                            <h3>PREGUNTAS FRECUENTES</h3>
+                            <p>¡Encontrá toda la info, para que pintar sea más fácil!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5 d-flex justify-content-center">
+                    <div class="grid-item shadow">
+                        <img src="./assets/img/img (1).jpg" class="img-fluid" alt="Imagen 1">
+                        <div class="overlay">
+                            <h3>NUESTRA EMPRESA</h3>
+                            <p>¡Descubrí nuestro catalogo de productos!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5 d-flex justify-content-center">
+                    <div class="grid-item shadow">
+                        <img src="./assets/img/img (3).jpg" class="img-fluid" alt="Imagen 3">
+                        <div class="overlay">
+                            <h3>GUÍA DE PINTUTERÍA</h3>
+                            <p>¡Encontrá la tienda más cercana!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -------------------------------------- -->
+
+        <!-- ---------- SECCIÓN: 1 ---------- -->
+
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Categorías -->
+                <div class="col-lg-12 mb-4 text-center">
+                    <a href="#" id="producto-latex" class="tag-filter"><button type="button"
+                            class="btn btn-outline-dark">Pintura Látex</button></a>
+                    <a href="#" id="producto-oleo" class="tag-filter"><button type="button"
+                            class="btn btn-outline-dark">Pintura Oleo</button></a>
+                    <a href="#" id="mostrar-todo" class="tag-filter"><button type="button"
+                            class="btn btn-outline-dark">Mostrar todo</button></a>
+                </div>
+                <!-- Productos -->
+                <div class="col-lg-12">
+                    <div class="row" id="product-list">
+                        <div class="col-md-6 mb-4 producto-latex">
+                            <div class="card h-100 shadow bg-dark-subtle" style="border: none;">
+                                <img src="./assets/producto1.jpg" class="card-img-top" alt="Producto 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Producto 1</h5>
+                                    <p class="card-text">Descripción del producto. Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit.</p>
+                                    <ul class="list-unstyled">
+                                        <li>Duración: 2 años</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#" class="btn btn-primary">Más información</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4 producto-latex">
+                            <div class="card h-100 shadow bg-dark-subtle" style="border: none;">
+                                <img src="./assets/producto2.jpg" class="card-img-top" alt="Producto 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Producto 2</h5>
+                                    <p class="card-text">Descripción del producto. Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit.</p>
+                                    <ul class="list-unstyled">
+                                        <li>Duración: 3 años</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#" class="btn btn-primary">Más información</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4 producto-oleo">
+                            <div class="card h-100 shadow bg-dark-subtle" style="border: none;">
+                                <img src="./assets/producto3.jpg" class="card-img-top" alt="Producto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Producto 3</h5>
+                                    <p class="card-text">Descripción del producto. Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit.</p>
+                                    <ul class="list-unstyled">
+                                        <li>Duración: 3 años</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#" class="btn btn-primary">Más información</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4 producto-oleo">
+                            <div class="card h-100 shadow bg-dark-subtle" style="border: none;">
+                                <img src="./assets/producto4.jpg" class="card-img-top" alt="Producto 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Producto 4</h5>
+                                    <p class="card-text">Descripción del producto. Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit.</p>
+                                    <ul class="list-unstyled">
+                                        <li>Duración: 3 años</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#" class="btn btn-primary">Más información</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -------------------------------------- -->
+
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>PINTALECK</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Inicio</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Horarios de Atención</h5>
+                    <p><strong>Lunes a Viernes:</strong> 9:00 AM - 6:00 PM<br><strong>Sábados:</strong> 9:00
+                        AM<br><strong>Domingos:</strong> Cerrado</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Contacto</h5>
+                    <p>info@pintaleck.com</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <p>&copy; <span id="currentYear"></span> PINTALECK. Todos los derechos reservados.</p>
+        </div>
+
+        <!-- script for current year -->
+        <script>
+            document.getElementById("currentYear").textContent = new Date().getFullYear();
+        </script>
+    </footer>
+    <!-- ---------------------- -->
+
+    <!-- wHATSAPP BUTTON  -->
+
+    <div class="wp-btn-container">
+        <a href="https://api.whatsapp.com/send?phone=5493447552063&text=Hola!,%20quiero%20m%C3%A1s%20informaci%C3%B3n"
+            target="_blank" class="shadow btn-primary rounded-circle wp-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!------------------->
+
+    <script src="main.js"></script>
+
+    <!-- bootstrap 5.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jquery 3.7.1 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/3151bdbeb8.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
