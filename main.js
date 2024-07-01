@@ -1,5 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    const imageModal = document.getElementById('imageModal')
+    imageModal.addEventListener('show.bs.modal', function (event) {
+        const button = event.relatedTarget
+        const imgSrc = button.getAttribute('data-bs-src')
+        const modalImage = document.getElementById('modalImage')
+        modalImage.src = imgSrc
+    })
+
+
     $(document).ready(function () {
         let navbar = $('.navbar')
 
@@ -44,14 +53,15 @@ document.addEventListener('DOMContentLoaded', () => {
             var tagId = $(this).attr('id')
 
             if (tagId === "mostrar-todo") {
-                $(".col-md-6").fadeIn(500)
+                $(".col-md-6").fadeIn(250)
             } else {
-                $(".col-md-6").fadeOut(500, function () {
-                    $("." + tagId).fadeIn(500)
+                $(".col-md-6").fadeOut(250, function () {
+                    $("." + tagId).fadeIn(250)
                 })
             }
         })
     })
+
 
     handleFlexClass()
     window.addEventListener('resize', handleFlexClass)
