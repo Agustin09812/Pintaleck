@@ -9,10 +9,37 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
 
+    // ### NAVBAR ###
     $(document).ready(function () {
-        let navbar = $('.navbar')
 
-        let navbarHeight = navbar.height()
+        $('#imglink').on('click', function (event) {
+            if (this.hash !== '') {
+                event.preventDefault()
+
+                const hash = this.hash
+                const navbarHeight = $('.navbar').outerHeight()
+                const targetOffset = $(hash).offset().top - navbarHeight
+
+                $('html, body').animate({
+                    scrollTop: targetOffset
+                }, 250)
+            }
+        })
+
+        $('.navbar-nav a').on('click', function (event) {
+            if (this.hash !== '') {
+                event.preventDefault()
+
+                const hash = this.hash
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - $('.navbar').outerHeight()
+                }, 250)
+            }
+        })
+
+        let navbar = $('.navbar')
+        let navbarHeight = navbar.outerHeight()
 
         $(window).scroll(function () {
             let scroll = $(window).scrollTop()
@@ -23,25 +50,29 @@ document.addEventListener('DOMContentLoaded', () => {
                 navbar.removeClass('navbar-scrolled')
             }
         })
-    })
 
-    window.addEventListener('resize', function () {
-        let windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
-        let navbarNavList = document.getElementById('navbarNavList')
-        let navItems = navbarNavList.querySelectorAll('li')
-        navItems.forEach(function (item) {
+        window.addEventListener('resize', function () {
+            let windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
+            let navbarNavList = document.getElementById('navbarNavList')
+            let navItems = navbarNavList.querySelectorAll('li')
+
+            navItems.forEach(function (item) {
+                if (windowWidth < 992) {
+                    item.classList.add('mb-3')
+                } else {
+                    item.classList.remove('mb-3')
+                }
+            })
+
             if (windowWidth < 992) {
-                item.classList.add('mb-3')
+                navbarNavList.classList.add('mt-4')
             } else {
-                item.classList.remove('mb-3')
+                navbarNavList.classList.remove('mt-4')
             }
         })
-        if (windowWidth < 992) {
-            navbarNavList.classList.add('mt-4')
-        } else {
-            navbarNavList.classList.remove('mt-4')
-        }
     })
+
+    // ### NAVBAR ###
 
     $(document).ready(function () {
 
@@ -62,10 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
 
-
-    handleFlexClass()
-    window.addEventListener('resize', handleFlexClass)
-
 })
 
 
@@ -80,3 +107,4 @@ function changeActive(element) {
     element.classList.add('active')
     element.classList.add('hovered')
 }
+

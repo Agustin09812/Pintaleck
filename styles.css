@@ -195,6 +195,10 @@ h6 {
 
 /* ---------- ABOUT SECTION ---------- */
 
+#about {
+    padding: 2rem 0;
+}
+
 .about-text {
     font-size: 1.1rem;
     align-content: center;
