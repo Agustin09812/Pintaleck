@@ -18,8 +18,8 @@
         <!-- ---------- NAVBAR ---------- -->
         <nav class="navbar navbar-expand-lg navbar-dark menu fixed-top">
             <div class="container">
-                <a class="navbar-brand" href=""><strong>PINTALECK</strong>
-                    <!-- <img src="./assets/Logo-blanco.png" class="logo" alt="logo image" /> -->
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/logo-white.png" class="logo" alt="logo image" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,14 +35,13 @@
                         <div>
                             <li class="nav-item">
                                 <a class="nav-link text-center fs-6" onclick="changeActive(this)"
-                                    href="#company">Quienes
-                                    Somos</a>
+                                    href="#products">Productos</a>
                             </li>
                         </div>
                         <div>
                             <li class="nav-item">
-                                <a class="nav-link text-center fs-6" onclick="changeActive(this)"
-                                    href="#brands">Marcas</a>
+                                <a class="nav-link text-center fs-6" onclick="changeActive(this)" href="#about">Quienes
+                                    Somos</a>
                             </li>
                         </div>
                         <div>
@@ -94,7 +93,7 @@
                         <img src="./assets/img/fondo-6.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -103,14 +102,14 @@
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
-                </button>
+                </button> -->
             </div>
         </div>
         <!-- -------------------------------------- -->
 
         <!-- ---------- SECCIÓN: 1 ---------- -->
         <div class="container">
-            <div class="text-center mb-5 tittle">
+            <div class="text-center mb-5 pt-5 tittle">
                 <h1>INDICE</h1>
                 <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et accusamus ipsa delectus quos commodi
                     aliquid fugit, tempora praesentium provident, amet dolor expedita explicabo omnis consequatur
@@ -118,31 +117,37 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 mb-5 d-flex justify-content-center">
-                    <div class="grid-item shadow">
-                        <img src="./assets/img/img (2).jpg" class="img-fluid" alt="Imagen 2">
-                        <div class="overlay">
-                            <h3>PREGUNTAS FRECUENTES</h3>
-                            <p>¡Encontrá toda la info, para que pintar sea más fácil!</p>
+                    <a href="#faq">
+                        <div class="grid-item shadow">
+                            <img src="./assets/img/img (2).jpg" class="img-fluid" alt="Imagen 2">
+                            <div class="overlay">
+                                <h3>PREGUNTAS FRECUENTES</h3>
+                                <p>¡Encontrá toda la info, para que pintar sea más fácil!</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-lg-4 mb-5 d-flex justify-content-center">
-                    <div class="grid-item shadow">
-                        <img src="./assets/img/img (1).jpg" class="img-fluid" alt="Imagen 1">
-                        <div class="overlay">
-                            <h3>NUESTRA EMPRESA</h3>
-                            <p>¡Descubrí nuestro catalogo de productos!</p>
+                    <a href="#about">
+                        <div class="grid-item shadow">
+                            <img src="./assets/img/img (1).jpg" class="img-fluid" alt="Imagen 1">
+                            <div class="overlay">
+                                <h3>NUESTRA EMPRESA</h3>
+                                <p>¡Descubrí nuestro catalogo de productos!</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-lg-4 mb-5 d-flex justify-content-center">
-                    <div class="grid-item shadow">
-                        <img src="./assets/img/img (3).jpg" class="img-fluid" alt="Imagen 3">
-                        <div class="overlay">
-                            <h3>GUÍA DE PINTUTERÍA</h3>
-                            <p>¡Encontrá la tienda más cercana!</p>
+                    <a href="#guide">
+                        <div class="grid-item shadow">
+                            <img src="./assets/img/img (3).jpg" class="img-fluid" alt="Imagen 3">
+                            <div class="overlay">
+                                <h3>GUÍA DE PINTUTERÍA</h3>
+                                <p>¡Recomendaciones y seguerencias para tu pintura!</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -151,7 +156,12 @@
 
         <!-- ---------- SECCIÓN: 1 ---------- -->
 
-        <div class="container mt-5">
+        <div class="container pb-5 mt-5" id="products">
+            <div class="text-center mb-5 tittle">
+                <h1>PRODUCTOS</h1>
+                <h5>Explorá nuestra ámplia gama de pinturas para embellecer tus
+                    espacios. Ofrecemos calidad y durabilidad en cada producto.</h5>
+            </div>
             <div class="row">
                 <!-- Categorías -->
                 <div class="col-lg-12 mb-4 text-center">
@@ -261,7 +271,252 @@
             </div>
         </div>
 
+        <!-- ---------- SECCIÓN: 2 ---------- -->
+
+        <div class="container about-section pb-5 mt-5" id="about">
+            <div class="text-center mb-5 tittle">
+                <h1>ACERCA DE NOSOTROS</h1>
+            </div>
+            <div class="row about-content">
+                <div class="col-lg-6">
+                    <p class="about-text">PINTALECK es una empresa dedicada a la fabricación y venta de pinturas de alta
+                        calidad. Fundada hace más de dos décadas, nos hemos consolidado como líderes en el sector
+                        gracias a nuestro compromiso con la innovación y la excelencia. Nuestra misión es proporcionar
+                        productos innovadores que satisfagan las necesidades de nuestros clientes y contribuyan al
+                        embellecimiento y protección de sus espacios. Creemos firmemente que una buena pintura no solo
+                        debe ser estética, sino también duradera y sostenible, por lo que invertimos constantemente en
+                        investigación y desarrollo para ofrecer las mejores soluciones del mercado.
+                        <br>
+                        Desde nuestra fundación, hemos trabajado incansablemente para mejorar nuestros procesos y
+                        productos, siempre con un enfoque en la sostenibilidad y el respeto por el medio ambiente.
+                        Implementamos tecnologías avanzadas y prácticas ecológicas en todas las etapas de nuestra
+                        producción, desde la selección de materias primas hasta el empaquetado final. Nuestro objetivo
+                        es minimizar el impacto ambiental y promover un futuro más verde y saludable para las próximas
+                        generaciones.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./assets/img/about-01.jpg" alt="Imagen de PINTALECK" class="about-img">
+                </div>
+            </div>
+            <div class="row about-content">
+                <div class="col-lg-6 order-lg-2">
+                    <p class="about-text">Nos enorgullecemos de nuestra capacidad para innovar y de nuestro compromiso
+                        con la calidad y la excelencia. Cada miembro de nuestro equipo, desde los científicos en
+                        nuestros laboratorios hasta los trabajadores en nuestras fábricas, comparte la visión de crear
+                        productos que superen las expectativas de los clientes. Este enfoque nos ha permitido ganar la
+                        confianza de una amplia base de clientes, que incluye tanto a profesionales de la construcción y
+                        decoración como a particulares que buscan mejorar sus hogares.
+                        <br>
+                        Además de nuestra oferta de pinturas de alta calidad, PINTALECK se dedica a proporcionar un
+                        servicio al cliente excepcional. Nos esforzamos por entender las necesidades específicas de cada
+                        cliente y ofrecer asesoramiento experto para asegurar que elijan los productos más adecuados
+                        para sus proyectos. Nuestro equipo de atención al cliente está siempre dispuesto a responder
+                        preguntas y proporcionar soporte técnico, garantizando así una experiencia de compra
+                        satisfactoria y sin complicaciones.
+                    </p>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <img src="./assets/img/about-02.jpg" alt="Imagen de PINTALECK" class="about-img">
+                </div>
+            </div>
+        </div>
+
         <!-- -------------------------------------- -->
+
+        <!-- ---------- SECCIÓN: 3 ---------- -->
+
+        <section id="faq" class="py-5 mt-5 pb-5 bg-body-secondary">
+            <div class="container">
+                <div class="text-center mb-5 tittle">
+                    <h1>FAQS</h1>
+                </div>
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                ¿Cuáles son los tipos de pintura que ofrece PINTALECK?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                PINTALECK ofrece una amplia variedad de pinturas, incluyendo pinturas látex,
+                                pinturas al óleo, barnices, e impermeabilizantes. Cada tipo de pintura está
+                                formulado para satisfacer diferentes necesidades y aplicaciones, asegurando siempre
+                                la máxima calidad y durabilidad.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                ¿Cómo puedo elegir la pintura adecuada para mi proyecto?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Elegir la pintura adecuada depende de varios factores, como la superficie a pintar,
+                                el acabado deseado y las condiciones ambientales. Nuestro equipo de expertos está
+                                disponible para ofrecer asesoramiento personalizado y ayudarle a seleccionar el
+                                producto que mejor se adapte a sus necesidades específicas.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                ¿Dónde puedo comprar los productos de PINTALECK?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Los productos de PINTALECK están disponibles en una red de distribuidores
+                                autorizados a nivel nacional e internacional. Además, puede realizar sus compras
+                                directamente a través de nuestra tienda en línea, donde encontrará toda nuestra gama
+                                de productos con descripciones detalladas y opciones de envío.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                ¿Cómo puedo contactar con el servicio de atención al cliente?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Puede contactar con nuestro servicio de atención al cliente a través del formulario
+                                de contacto en nuestra página web, enviando un correo electrónico a
+                                info@pintaleck.com, o llamando a nuestro número de atención al cliente. Estamos
+                                disponibles de lunes a viernes, de 9:00 a 18:00 horas.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                ¿Qué medidas de sostenibilidad implementa PINTALECK?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                En PINTALECK estamos comprometidos con la sostenibilidad. Implementamos prácticas
+                                ecológicas en todas las etapas de producción, desde la selección de materias primas
+                                hasta el empaquetado. Utilizamos tecnologías avanzadas para reducir el impacto
+                                ambiental y promovemos el uso de productos no tóxicos y de bajo VOC (Compuestos
+                                Orgánicos Volátiles).
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- -------------------------------------- -->
+
+        <!-- ---------- SECCIÓN: 3 ---------- -->
+
+        <section id="guide" class="py-5 mt-5 pb-5">
+            <div class="container">
+                <div class="text-center mb-5 tittle">
+                    <h1>Guía de Pinturería</h1>
+                </div>
+                <div class="row">
+                    <!-- Recomendación 1 -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card shadow h-100">
+                            <img src="./assets/img/img (4).jpg" class="card-img-top" alt="Recomendación 1"
+                                style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Preparación de la Superficie</h5>
+                                <p class="card-text">Antes de pintar, asegúrese de que la superficie esté limpia,
+                                    seca y libre de polvo. Use una lija para suavizar las superficies rugosas y una
+                                    solución de limpieza para eliminar cualquier grasa o suciedad.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Recomendación 2 -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card shadow h-100">
+                            <img src="./assets/img/img (4).jpg" class="card-img-top" alt="Recomendación 2"
+                                style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Elección del Tipo de Pintura</h5>
+                                <p class="card-text">Seleccione la pintura adecuada para cada tipo de superficie y
+                                    ambiente. Las pinturas látex son ideales para interiores, mientras que las
+                                    pinturas al óleo ofrecen una mayor durabilidad para exteriores.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Recomendación 3 -->
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card shadow h-100">
+                            <img src="./assets/img/img (4).jpg" class="card-img-top" alt="Recomendación 3"
+                                style="height: 200px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Aplicación de la Pintura</h5>
+                                <p class="card-text">Aplique la pintura en capas delgadas y uniformes, utilizando
+                                    brochas, rodillos o pulverizadores. Deje secar completamente entre capa y capa
+                                    para obtener un acabado profesional y duradero.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- -------------------------------------- -->
+
+        <!-- ---------- SECCIÓN: 3 ---------- -->
+
+        <section id="contact" class="py-5 mt-5 pb-5 bg-body-secondary rounded-1">
+            <div class="container">
+                <div class="text-center mb-5 tittle">
+                    <h1>Contacto</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="firstName" placeholder="Nombre">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="lastName" placeholder="Apellido">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="email"
+                                    placeholder="Dirección de Correo Electrónico">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="subject" placeholder="Asunto">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="message" rows="5" placeholder="Mnesaje"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- -------------------------------------- -->
+
+        </section>
 
 
     </main>
@@ -273,9 +528,9 @@
                     <h5>PINTALECK</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#product">Productos</a></li>
+                        <li><a href="#about">Quienes Somos</a></li>
+                        <li><a href="#contact">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 mb-3">

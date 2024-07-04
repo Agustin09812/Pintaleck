@@ -65,6 +65,10 @@ h6 {
     transition: background-color 500ms ease;
 }
 
+.navbar-brand img {
+    width: 10rem;
+}
+
 .navbar-scrolled {
     background-color: #323232;
     transition: background-color 500ms ease;
@@ -186,6 +190,75 @@ h6 {
 .btn-outline-dark {
     margin: 0 5px;
 }
+
+/* -------------------------------------- */
+
+/* ---------- ABOUT SECTION ---------- */
+
+.about-text {
+    font-size: 1.1rem;
+    align-content: center;
+    text-wrap: pretty;
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-content {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* -------------------------------------- */
+
+/* ---------- GUIDE SECTION ---------- */
+
+#guide {
+    padding: 2rem 0;
+}
+
+#guide .card {
+    border: none;
+}
+
+#guide .card-title {
+    font-weight: bold;
+    text-wrap: balance;
+}
+
+#guide .card-text {
+    color: #6c757d;
+    text-wrap: pretty;
+}
+
+/* -------------------------------------- */
+
+/* ---------- FORM SECTION ---------- */
+
+#contact {
+    padding: 2rem 0;
+}
+
+#contact .form-control {
+    box-shadow: none;
+}
+
+#contact .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#contact .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
 
 /* -------------------------------------- */
 
