@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
 
-    // ### NAVBAR ###
+    // #################### NAVBAR ###################################
+
     $(document).ready(function () {
 
         $('#imglink').on('click', function (event) {
@@ -72,7 +73,34 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
 
-    // ### NAVBAR ###
+    // #######################################################
+
+    // #################### PORTADA ###################################
+
+    $(document).ready(function () {
+        function updateCarouselImages() {
+            const isMobile = window.innerWidth <= 992
+
+            $('.carousel-item img').each(function () {
+                const desktopSrc = $(this).attr('src')
+                const mobileSrc = $(this).data('mobile-src')
+
+                if (isMobile) {
+                    $(this).attr('src', mobileSrc)
+                } else {
+                    $(this).attr('src', desktopSrc.replace('-movil', ''))
+                }
+            })
+        }
+
+        updateCarouselImages()
+
+        $(window).resize(function () {
+            updateCarouselImages()
+        })
+    })
+
+    // #######################################################
 
     $(document).ready(function () {
 
