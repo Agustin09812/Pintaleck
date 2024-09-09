@@ -263,6 +263,25 @@ h6 {
     border-color: #0056b3;
 }
 
+/* -------------------------------------- */
+
+/* -------------------- FOOTER SECTION -------------------- */
+
+.list-unstyled li a,
+.list-mail p a,
+.development-brand a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #afafaf;
+    transition: all 250ms ease-in-out;
+
+    &:hover {
+        color: #0056b3;
+    }
+}
+
+/* -------------------------------------- */
+
 
 /* -------------------------------------- */
 
